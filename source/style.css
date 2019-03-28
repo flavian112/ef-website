@@ -1,80 +1,218 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    color: white;
-}
 
-body
-{
-    font-family: sans-serif;
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background.jpg);
-    background-attachment: fixed;
-    position: relative;
-    margin-top: 100px;
-}
-
-.toprow
-{
-    margin: auto;
-}
-
-.navbar
-{
-    float: left;
-    list-style: none;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 10%;
-    margin-right: 10%;
-    vertical-align: middle;
-}
-.navbar li
-{
-    display: inline-grid;
-}
-
-.navbar li.active a
-{
-    border: 1px solid white;
+@media (max-width : 768px) {
+    *
+    {
+        color: white;
+    }
     
-}
-
-.navbar li a:hover
-{
-    border: 1px solid white;
-}
-
-
-.navbar li a
-{
-    text-decoration: none;
-    padding: 5px 20px;
-    font-size: 15px;
-}
-
-
-h1
-{
-    text-transform: uppercase;
-    font-size: 70px;
-    text-align: center;
-    margin-top: 275px;
+    body
+    {
+        font-family: sans-serif;
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(assets/background.jpg);
+        background-attachment: fixed;
+        position: relative;
+        margin-top: 60%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        text-align: justify;
+    }
     
+    footer
+    {
+        font-family: sans-serif;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        display: block;
+        list-style: none;
+    }
+    
+    
+
+    .toprow
+    {
+        margin: 0;
+    }
+
+    .navbar
+    {
+        list-style: none;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        padding: 0;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .navbar li
+    {
+        display: block;
+    }
+
+    .navbar li a
+    {
+        text-decoration: none;
+        padding: 10%;
+        font-size: 150%;
+    }
+
+
+    h1
+    {
+        text-transform: uppercase;
+        font-size: 250%;
+        text-align: center;
+        padding 10%;
+
+    }
+
+    h2
+    {
+        font-size: 200%;
+        text-align: center;
+    }
+
+    p {
+
+        padding-bottom: 2.5%;
+
+    }
+    header
+    {
+        top: 0;
+        height: auto;
+        background-color: black;
+
+        position: fixed;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+
+
+    figure {
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    figure img {
+        width: 100%;
+    }
+    figure figcaption{
+        text-align: center;
+    }
 }
-header
-{
-    top: 0;
-    height: auto;
-    background-color: black;
 
-    position: fixed;
-    width: 100%;
 
-}
+@media (min-width : 769px) {
+    *
+    {
+        color: white;
+    }
+    
+    body
+    {
+        font-family: sans-serif;
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(assets/background.jpg);
+        background-attachment: fixed;
+        position: relative;
+        margin-top: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: justify;
+    }
+    
 
-.content {
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: justify;
+    .toprow
+    {
+        margin: auto;
+    }
+
+    .navbar
+    {
+        list-style: none;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        vertical-align: middle;
+    }
+    .navbar li
+    {
+        display: inline-block;
+    }
+
+    .navbar li a:hover
+    {
+        border: 1px solid white;
+    }
+
+
+    .navbar li a
+    {
+        text-decoration: none;
+        padding: 5px 20px;
+        font-size: 15px;
+    }
+
+
+    h1
+    {
+        text-transform: uppercase;
+        font-size: 250%;
+        text-align: center;
+        padding 10%;
+
+    }
+
+    h2
+    {
+        font-size: 200%;
+        text-align: center;
+    }
+
+    p {
+
+        padding-bottom: 2.5%;
+
+    }
+    header
+    {
+        top: 0;
+        height: auto;
+        background-color: black;
+
+        position: fixed;
+        width: 100%;
+
+    }
+    
+    footer
+    {
+        font-family: sans-serif;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        display: block;
+        list-style: none;
+    }
+
+
+
+    figure {
+        display: inline;
+        float: right;
+        padding: 2.5%;
+        width: 45%;
+    }
+    figure img {
+        width: 100%;
+    }
+    figure figcaption{
+        text-align: center;
+    }
 }
